@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">我的日记</string>
+    <string name="title_activity_mains">MainsActivity</string>
+</resources>

@@ -1,0 +1,26 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_marginTop="8dp"
+        android:id="@+id/Img_main_menu_img"
+        android:src="@mipmap/main_map"
+        android:layout_width="65dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="65sp" />
+
+    <TextView
+        android:id="@+id/Tv_main_menu_text"
+        android:text="地图"
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/Img_main_menu_img"/>
+
+
+
+</RelativeLayout>

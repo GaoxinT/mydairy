@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- linearlayout中的布局是每一项后面隐藏的布局 -->
+
+    <LinearLayout
+        android:id="@+id/back"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_marginEnd="1dp"
+        android:background="#eee"
+        android:gravity="end"
+        android:tag="back">
+
+        <Button
+            android:id="@+id/row_b_action_bianji"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/holo_green_light"
+            android:text="编辑" />
+
+        <Button
+            android:id="@+id/row_b_action_del"
+            android:layout_width="75dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="0dp"
+            android:background="@android:color/holo_red_light"
+            android:text="删除"
+            android:textColor="@android:color/white" />
+    </LinearLayout>
+
+    <!-- 这里是前台显示的布局 -->
+
+    <LinearLayout
+        android:id="@+id/front"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#ffffff"
+        android:orientation="horizontal"
+        android:tag="front">
+
+        <ImageView
+            android:id="@+id/Iv_dairy_img"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/activity_horizontal_margin"
+            android:src="@mipmap/dairy_img"
+            android:layout_gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/row_tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/row_tv_context"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:ellipsize="marquee"
+                android:lines="1"
+                android:textColor="@android:color/black"
+                android:textSize="18sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</FrameLayout>

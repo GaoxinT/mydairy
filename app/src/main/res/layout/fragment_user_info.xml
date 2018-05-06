@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:background="#F0F3F6"
+        android:id="@+id/Layout_user_info"
+        android:layout_width="match_parent"
+        android:layout_height="210dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:id="@+id/Iv_user_info"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:src="@mipmap/user_info_bgp"
+            android:layout_marginBottom="14dp" />
+
+        <ImageView
+            android:id="@+id/Iv_user_head_img"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/ic_user_head" />
+
+        <TextView
+            android:id="@+id/Tv_user_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/Iv_user_head_img"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="请登入"
+            android:textColor="@color/white"
+            android:textSize="18dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Layout_user_info"
+        android:background="#F0F3F6"
+        android:orientation="vertical">
+
+        <LinearLayout style="@style/wrap_layout">
+            <!-- 上圆角-->
+            <LinearLayout style="@style/top_layout"
+                android:id="@+id/Layout_user_gxqm">
+
+                <TextView
+                    style="@style/usertext"
+                    android:text="个性签名" />
+
+                <ImageView style="@style/img_arrow" />
+            </LinearLayout>
+
+            <!-- 分割线 -->
+            <View style="@style/bg_line" />
+            <!-- 无圆角-->
+            <LinearLayout style="@style/mid_layout"
+                android:id="@+id/Layout_user_wdzl">
+
+                <TextView
+                    style="@style/usertext"
+                    android:text="我的资料" />
+
+                <ImageView style="@style/img_arrow" />
+            </LinearLayout>
+
+            <View style="@style/bg_line" />
+            <!-- 下圆角-->
+            <LinearLayout style="@style/bottom_layout"
+                android:id="@+id/Layout_user_xxtz">
+
+                <TextView
+                    style="@style/usertext"
+                    android:text="消息通知" />
+
+                <ImageView style="@style/img_arrow" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <!-- 全圆角-->
+        <LinearLayout style="@style/wrap_layout"
+            android:layout_marginTop="8dp">
+
+            <LinearLayout style="@style/single_layout"
+                android:id="@+id/Layout_user_tcdr">
+
+                <TextView
+                    style="@style/usertext"
+                    android:text="退出登入" />
+
+                <ImageView style="@style/img_arrow" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>

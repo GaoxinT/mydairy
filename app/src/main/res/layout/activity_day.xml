@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_day"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.gx.mydairy.dairy.activitys.DayActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/daytv_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:gravity="center"
+            android:textSize="24sp"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/daytv_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:gravity="center"
+            android:textSize="24sp"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:gravity="center"
+            android:textSize="28sp"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/daytv_3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:gravity="center"
+            android:textSize="24sp"
+            android:visibility="visible"/>
+
+        <TextView
+            android:id="@+id/daytv_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:gravity="center"
+            android:textSize="28sp"
+            android:visibility="visible"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/daytv_6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="2015-6-6"
+        android:gravity="center"
+        android:textSize="25sp"
+        android:layout_alignParentBottom="true" />
+
+</RelativeLayout>
